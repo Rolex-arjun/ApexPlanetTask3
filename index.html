@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Styling and JavaScript - Task 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Section 1: Responsive Box -->
+    <section>
+      <h2>1. Responsive Box</h2>
+      <div class="responsive-box">
+        Resize the window to see responsive design in action!
+      </div>
+    </section>
+
+    <!-- Section 2: Interactive Quiz -->
+    <section>
+      <h2>2. JavaScript Quiz</h2>
+      <p class="question">What is the output of: <code>2 + "2"</code>?</p>
+      <div class="btn-group">
+        <button onclick="checkAnswer('22')">22</button>
+        <button onclick="checkAnswer('4')">4</button>
+        <button onclick="checkAnswer('Error')">Error</button>
+      </div>
+      <p id="result"></p>
+    </section>
+
+    <!-- Section 3: API Fetch -->
+    <section>
+      <h2>3. Fetch a Random Joke</h2>
+      <button onclick="getJoke()">Get a Joke</button>
+      <p id="joke">Click the button to fetch a joke!</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
